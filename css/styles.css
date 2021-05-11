@@ -479,12 +479,67 @@ img {
   background-color: var(--alter-text-color);
   color: #000000;
 }
+textarea {
+  resize: none;
+}
+.form-title {
+  padding-top: 2px;
+  padding-right: 40px;
+  padding-left: 40px;
+  margin-bottom: 12px;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+
+  color: var(--main-text-color);
+}
 .close-modal-svg {
   position: absolute;
   fill: #000000;
   cursor: pointer;
 }
+.modal-form {
+  width: 100%;
+}
+.form-label {
+  display: flex;
+  flex-direction: column;
+  padding-left: 41px;
+  padding-right: 39px;
+  margin-bottom: 10px;
+}
+.form-label > input {
+  padding: 12px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.form-label > label {
+  margin-bottom: 4px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: var(--parag-text-color);
+}
+textarea {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-right: 16px;
+  padding-left: 16px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  min-height: 120px;
+}
 
+textarea::placeholder {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+
+  color: rgba(117, 117, 117, 0.5);
+}
 /* page Portfolio */
 .button-portfolio {
   font-weight: 500;
@@ -672,3 +727,27 @@ img {
 .adress-in-foot-list:last-child {
   margin-bottom: 0;
 }
+.subscript {
+  margin-left: 93px;
+  padding-top: 12px;
+  align-items: center;
+  justify-content: center;
+}
+
+.subsc-form {
+  margin-top: 20px;
+}
+
+.subsc-form > input {
+  width: 358px;
+  height: 50px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: var(--dark-backgr-color);
+}
+/* .label-in-foot {
+  margin-bottom: 20px;
+} */

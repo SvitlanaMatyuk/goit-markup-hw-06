@@ -389,20 +389,55 @@
                         </li>
                     </ul>
                 </div>
+            <div class="subscript">
+<label for="subscript" class="par-in-footer label-in-foot">Подпишитесь на рассылку</label>
+<div class="subsc-form">
+<input type="email" id="subscript">
+<button type="submit">Подписаться</button>
+</div>
+
+            </div>
             </div>
         </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
+    
             <button class="modal-button" data-modal-close>
-            <svg class="close-modal-svg" width=18px height=18px>
-                <use href="./images/icons/modals-icons/sprite-modal.svg#icon-close-black-icon"></use>
-            </svg>
+                <svg class="close-modal-svg" width=18px height=18px>
+                    <use href="./images/icons/modals-icons/sprite-modal.svg#icon-close-black-icon"></use>
+                </svg>
             </button>
+            <form action="" class="modal-form">
+            <p class="form-title">
+                Оставьте свои данные, мы вам перезвоним
+            </p>
+
+                <div class="form-label">
+                    <label for="name">Имя</label>
+                    <input type="text" name="name" id="name">
+                </div>
+                <div class="form-label">
+                    <label for="tel">Телефон</label>
+                    <input type="tel" name="tel" id="tel">
+                </div>
+                <div class="form-label">
+                    <label for="mail">Почта</label>
+                    <input type="email" name="mail" id="mail">
+                </div>
+                <div class="form-label">
+                    <label for="comment">Оставить комментарий</label>
+                    <textarea name="comment" id="comment" placeholder="Введите текст"></textarea>
+                </div>
+                <input type="checkbox" name="policy" id="policy">
+                <label for="policy">Соглашаюсь с рассылкой и принимаю
+                    <a href="" class="policy-text"> Условия договора</a></label>
+                <button type="submit">Отправить</button>
+            </form>
         </div>
-</div>
+    </div>
     <script src="./js/modal.js"></script>
-</body>
+    </body>
 
 
 </html>
