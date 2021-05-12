@@ -457,7 +457,7 @@ img {
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  min-width: 528px;
+  max-width: 528px;
   min-height: 581px;
   background-color: var(--alter-text-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -479,13 +479,14 @@ img {
   background-color: var(--alter-text-color);
   color: #000000;
 }
+.modal-button:focus .close-modal-svg,
+.modal-button:hover .close-modal-svg{
+  fill:var(--hov-color)
+}
 textarea {
   resize: none;
 }
 .form-title {
-  padding-top: 2px;
-  padding-right: 40px;
-  padding-left: 40px;
   margin-bottom: 12px;
   font-weight: bold;
   font-size: 20px;
@@ -502,15 +503,20 @@ textarea {
 .modal-form {
   width: 100%;
 }
+.form{
+  padding-left: 40px;
+  padding-right: 40px;
+}
 .form-label {
   display: flex;
   flex-direction: column;
-  padding-left: 41px;
-  padding-right: 39px;
+  position: relative;
   margin-bottom: 10px;
 }
 .form-label > input {
-  padding: 12px;
+  padding-left: 42px;
+  padding-top: 12px;
+  padding-bottom: 12px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
@@ -522,6 +528,22 @@ textarea {
   letter-spacing: 0.01em;
   color: var(--parag-text-color);
 }
+.form-svg{
+  position: absolute;
+  fill: var(--main-text-color);
+  margin-left: 21px;
+  transform: translate(-50%, 0) scale(1);
+  top: 50%;
+}
+.form-input:hover, .form-input:focus{
+  border-color:var(--hov-color);
+    cursor: pointer;
+    outline: none;
+}
+.form-input:focus + svg,
+.form-input:hover + svg{
+fill: var(--hov-color)}
+
 textarea {
   padding-top: 12px;
   padding-bottom: 12px;
@@ -729,18 +751,20 @@ textarea::placeholder {
 }
 .subscript {
   margin-left: 93px;
-  padding-top: 12px;
+  padding-top: 8px;
   align-items: center;
   justify-content: center;
 }
 
 .subsc-form {
   margin-top: 20px;
+  display: flex;
 }
 
 .subsc-form > input {
   width: 358px;
   height: 50px;
+  margin-right: 12px;
 
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
@@ -748,6 +772,33 @@ textarea::placeholder {
   border-radius: 4px;
   background-color: var(--dark-backgr-color);
 }
-/* .label-in-foot {
-  margin-bottom: 20px;
-} */
+.subscribe-svg {
+  fill: var(--hov-link-color);
+  margin-left: 10px;
+}
+.subsc-button {
+  display: flex;
+  width: 200px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  padding: 0;
+  cursor: pointer;
+
+  color: var(--hov-link-color);
+}
+
+.subsc-form > input::placeholder {
+  padding: 15px;
+ font-size: 16px;
+line-height: 1.25;
+letter-spacing: 0.03em;
+
+color: rgba(255, 255, 255, 0.6);
