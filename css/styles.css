@@ -593,6 +593,7 @@ align-items: center;
 }
 .policy-text > a{
   color: var(--hov-color);
+  margin-left: 4px;
 }
 .policy-text::before{
   content: "";
