@@ -641,6 +641,11 @@ transition: background-color 2505ms cubic-bezier(0.4, 0, 0.2, 1);
     box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.submit-button:focus,
+.submit-button:hover {
+  background-color:#188CE8
+}
+
     /* page Portfolio */
 .button-portfolio {
   font-weight: 500;
